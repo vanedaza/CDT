@@ -10,8 +10,17 @@
 
 CDT is a customised model, which is composed of 3 models (M1, M2 and M3). In turn, the Mi models are composed of commonly used machine learning models and a voting system.
 
-[Article](https://arxiv.org/abs/2302.01200). 
+    - M1 classifies C and D EBs
+    
+    - M2 classifies D and SD EBs
+    
+    - M3 classifies C and SD EBs 
+    
 
+              ALGORITHM:
+              The input x enter to model M1
+                      if M1(x) = D => classify M2(x)
+                      if M1(x) = C => classify M3(x)
 
 
 ## Use
@@ -48,7 +57,7 @@ If you prefer, you can create a  virtual environment of conda o pip:
     <b>install requirements:</b>
            
            
-       $ conda install --force-reinstall -y -q --name piscis -c conda-forge --file requirements.txt
+       $ conda install --force-reinstall -y -q --name cdt -c conda-forge --file requirements.txt
 </div>
 
 
@@ -94,3 +103,24 @@ If you prefer, you can create a  virtual environment of conda o pip:
        $ deactivate
 </div>
 
+# Authors
+
+Daza-Perilla, I. V. (IATE-OAC-UNC) <a itemprop="sameAs"  href="https://orcid.org/my-orcid?orcid=0000-0001-6216-9053" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"> <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
+
+Gramajo, L. V. (OAC-UNC)
+ 
+Lares, M.      (IATE-OAC-UNC)
+
+Palma, T.      (OAC-UNC)
+
+Ferreira Lopes, C. E. (Millennium Institute of Astrophysics)
+
+Minniti, D.   (Vatican Observatory)
+
+Clariá, J. J. (OAC-UNC)
+
+
+
+# Citation
+
+If you use this software please cite [Article](https://arxiv.org/abs/2302.01200).
