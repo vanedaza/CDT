@@ -1,0 +1,32 @@
+\documentclass{report}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{subfigure}
+%\usepackage{natbib}
+\usepackage{helvet,soul}
+\usepackage[font=small]{caption}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+
+
+\begin{document}
+
+\BLOCK{ for i in range(Nplots) }
+
+% table:
+%\VAR{tables[i]}
+
+\begin{landscape}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=1.5\textwidth]{plots/\VAR{plts[i]}}
+\end{figure}
+
+\input{tabla/\VAR{tables[i]}}
+\end{landscape}
+\newpage
+\BLOCK{ endfor }
+
+
+\end{document}
