@@ -130,7 +130,7 @@ CDT.ipynob It is the notebook that I run to do the classifications.
  
 ### **Report**
 
-CL.ipynb  This notebook is used to generate a .tex containing the light curves of the eclipsing binary systems and a table with system and classification information.  Most of the curves are beautiful.
+CL.ipynb  This notebook is used to generate a .tex containing the light curves of the eclipsing binary systems and a table with system and classification information.
  
  
  
